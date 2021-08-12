@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activities.Candidate_Detail">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/main_background">
+
+            <ImageView
+                android:id="@+id/main_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/sample" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/candi_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Candidate Name"
+            android:gravity="center"
+            android:layout_marginHorizontal="12dp"
+            android:textSize="30sp"
+            android:layout_marginTop="8dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/hint_color"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="8dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Educational History"
+            android:layout_marginHorizontal="12dp"
+            android:textSize="25sp"
+            android:layout_marginTop="22dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:text="Master's in computer science"
+            android:layout_marginHorizontal="18dp"
+            android:textSize="15sp"
+            android:layout_marginTop="8dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/hint_color"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Political History"
+            android:layout_marginHorizontal="12dp"
+            android:textSize="25sp"
+            android:layout_marginTop="22dp"/>
+
+        <TextView
+            android:id="@+id/p_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:text="Selected MPA, 2020"
+            android:layout_marginHorizontal="18dp"
+            android:textSize="15sp"
+            android:layout_marginTop="8dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/hint_color"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="12dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Future Goals"
+            android:layout_marginHorizontal="12dp"
+            android:textSize="25sp"
+            android:layout_marginTop="22dp"/>
+
+        <TextView
+            android:id="@+id/f_goals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:text="I aim to remove poverty and unemployment from the country. My main aim will be to bring happiness to the society, fulfill needs of needy people and protect them from any kind of miss happenings in my area."
+            android:layout_marginHorizontal="18dp"
+            android:textSize="15sp"
+            android:layout_marginTop="8dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/hint_color"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="12dp"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="15dp">
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dislike"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_dislike"
+                android:backgroundTint="#FF0000"
+                android:onClick="Dislike_candi"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Support"
+                android:textColor="@color/white"
+                android:drawableRight="@drawable/ic_like"
+                android:backgroundTint="#59B259"
+                android:onClick="Like_candi"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</ScrollView>

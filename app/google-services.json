@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "622765478485",
+    "project_id": "e-democ",
+    "storage_bucket": "e-democ.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622765478485:android:3dc7693325cd7cacf3badc",
+        "android_client_info": {
+          "package_name": "com.example.e_democ"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622765478485-8eirvg46pvbvtt55rou3mdjvjf7ghmru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA272zTdKz9xvt_1K7Xn1DYIh9sSEwN4no"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "622765478485-8eirvg46pvbvtt55rou3mdjvjf7ghmru.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

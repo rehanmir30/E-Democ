@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_background"
+    tools:context=".Activities.Get_More_Details_Voter">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.13">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_weight="0.1"
+            android:onClick="goBack"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More Details"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingRight="12dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:textSize="25sp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/select_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/sample"
+            app:civ_border_width="3dp"
+            app:civ_border_color="@color/black"
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Date of Birth"
+            android:focusable="false"
+            android:layout_marginTop="15dp"
+            android:textColorHint="@color/hint_color"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/ic_calender"
+            android:padding="8dp"
+            android:drawablePadding="8dp"/>
+
+        <EditText
+            android:id="@+id/adress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Adress"
+            android:layout_marginTop="15dp"
+            android:textColorHint="@color/hint_color"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/ic_adress"
+            android:padding="8dp"
+            android:drawablePadding="8dp"/>
+
+          <AutoCompleteTextView
+              android:id="@+id/occupation_spinner"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:hint="Occupation"
+              android:layout_marginTop="15dp"
+              android:textColorHint="@color/hint_color"
+              android:textColor="@color/black"
+              android:drawableLeft="@drawable/ic_occupation"
+              android:padding="8dp"
+              android:drawablePadding="8dp"/>
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_background"
+            android:backgroundTint="#59B259"
+            android:text="Save and  continue to profile"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="12dp"
+            android:onClick="move_to_profile"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
